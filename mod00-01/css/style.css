@@ -2,11 +2,11 @@
 ctrl+shift+enter - add new line before current line*/
 
 body {
-	background-color: powderblue;
+	background-color: yellow;
 	background: url("../img/bg.jpg") no-repeat; /*add image bacground; no-repeat prevents pattern*/
 	background-size: cover; /* fills page with background */
 	background-attachment: fixed; /* removes white something at the bottom of webpage*/
-	color: lightgoldenrodyellow; /*changes color of text in body; check https://fonts.google.com*/
+	color: tomato; /*changes color of text in body; check https://fonts.google.com*/
 	font-family: 'Source Sans Pro', sans-serif; /*after pasting specified font in HTML file*/
 
 }
@@ -22,7 +22,7 @@ h1 {
 h2{
 	text-transform: uppercase;
 	letter-spacing: 1px; /*spacing between letters*/
-	color: yellow;
+	color: red;
 }
 
 #me {
