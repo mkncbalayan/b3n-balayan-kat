@@ -1,0 +1,44 @@
+body {
+	background-color: pink;
+	background: url("../img/bg.jpg") no-repeat; /* add image bacground; no-repeat prevents pattern*/
+	background-size: cover; /* fills page with background */
+	background-attachment: fixed; /* removes white something at the bottom of webpage*/
+	color: white; /*changes color of text in body; check https://fonts.google.com*/
+	font-family: 'Source Sans Pro', sans-serif; /*after pasting specified font in HTML file*/
+
+}
+p {
+	font-family: 'Arvo', serif;
+}
+
+h1 {
+	font-size: 50px; /*font size of targeted element (h1)*/
+	margin-bottom: 0;
+}
+
+h2{
+	text-transform: uppercase;
+	letter-spacing: 1px; /*spacing between letters*/
+}
+
+#me {
+	height: 150px; /* # - set value as 'id' (to identify, shortcut); currently this is in img in HTML*/
+	border-radius: 50%;	/*rounded edge*/
+	border-style: solid; /*lining of image*/
+	border-width: 5px;
+	border-color: white;
+	margin-top: 50px; /*space above image (bottom, left, right)*/
+}
+
+.about{
+	/*. - set value for 'class'*/
+	width: 100%; /*% of parent element, which is div/container*/
+}
+
+.container{
+	width: 700px;
+	margin: 0 auto; /*center the whole container*/
+	text-align: center;
+
+
+}
