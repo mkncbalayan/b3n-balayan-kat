@@ -1,6 +1,9 @@
+/*ctrl+enter - add new line
+ctrl+shift+enter - add new line before current line*/
+
 body {
-	background-color: pink;
-	background: url("../img/bg.jpg") no-repeat; /* add image bacground; no-repeat prevents pattern*/
+	background-color: powderblue;
+	background: url("../img/bg.jpg") no-repeat; /*add image bacground; no-repeat prevents pattern*/
 	background-size: cover; /* fills page with background */
 	background-attachment: fixed; /* removes white something at the bottom of webpage*/
 	color: white; /*changes color of text in body; check https://fonts.google.com*/
@@ -19,6 +22,7 @@ h1 {
 h2{
 	text-transform: uppercase;
 	letter-spacing: 1px; /*spacing between letters*/
+	color: yellow;
 }
 
 #me {
@@ -33,12 +37,12 @@ h2{
 .about{
 	/*. - set value for 'class'*/
 	width: 100%; /*% of parent element, which is div/container*/
+	font-size: 18px;
+	line-height: 1.5; /*no unit; space between lines*/
 }
 
 .container{
 	width: 700px;
 	margin: 0 auto; /*center the whole container*/
 	text-align: center;
-
-
 }

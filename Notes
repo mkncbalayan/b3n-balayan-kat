@@ -1,2 +1,54 @@
 Notes
 
+commit = version
+
+right click directory folder containing mod00-01 > "git bash here" (install git)
+
+ls -a
+	shows all files in the directory folder
+
+git init
+	makes folder as empty git repository
+
+git add .
+	adds all files inside directory from "working directory" to "staging"
+
+git commit -m "message"
+	messege should be descriptive; should be present
+	will ask "Please tell me who you are"
+		enter git config --global user.email "email address used in github" > enter
+		enter git config --global user.name "name to be displayed" > enter
+	re-enter git commit -m "message"
+
+git status -s
+	will display changes made
+
+git log
+	will display commits/versions
+
+git remote add <remote name> <github repo url>
+	ex. git remote add github 
+
+	to get repo url:
+		github > create New Repository > the URL after git remote add origin -------  is the github repo url
+		ex git remote add github https://github.com/mkncbalayan/b3n-balayan-kat.git
+		will show
+			github  https://github.com/mkncbalayan/b3n-balayan-kat.git (push)
+			github is shortcut for URL
+
+git remote -v
+	shows existing remote configuration; check if remote add is successful
+
+ git push github master
+ 	pushes/publishes? whole folder ("master")
+
+ working directory - whole folder
+ staging directory - 
+
+ STAGES: working directory > ADD > staging directory > COMMIT > repository (git push)
+ 	(ADD) git add .
+ 	(COMMIT) git commit -m "message"
+ 	(PUSH) git push remote branch
+
+git diff
+	shows changes to previous version
