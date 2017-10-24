@@ -41,14 +41,22 @@ git remote -v
 
  git push github master
  	pushes/publishes? whole folder ("master")
+ 	github is a code
+ 	master is a level
 
  working directory - whole folder
  staging directory - 
 
- STAGES: working directory > ADD > staging directory > COMMIT > repository (git push)
+ STAGES: working directory > ADD > staging directory > COMMIT > repository > PUSH
  	(ADD) git add .
  	(COMMIT) git commit -m "message"
  	(PUSH) git push remote branch
 
 git diff
 	shows changes to previous version
+
+if stuck at :
+	type q
+
+to publish commit
+	github > profile > repositories > repository name: githubusername.github.io > check Readme > settings > github pages > " Your site is published at https://mkncbalayan.github.io/" > go back to profile > initial repository > settings > github pages > change source to "master branch" > save > url is https://mkncbalayan.github.io/b3n-balayan-kat/mod00-01

@@ -6,7 +6,7 @@ body {
 	background: url("../img/bg.jpg") no-repeat; /*add image bacground; no-repeat prevents pattern*/
 	background-size: cover; /* fills page with background */
 	background-attachment: fixed; /* removes white something at the bottom of webpage*/
-	color: white; /*changes color of text in body; check https://fonts.google.com*/
+	color: lightgoldenrodyellow; /*changes color of text in body; check https://fonts.google.com*/
 	font-family: 'Source Sans Pro', sans-serif; /*after pasting specified font in HTML file*/
 
 }
