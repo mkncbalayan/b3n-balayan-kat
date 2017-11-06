@@ -1,0 +1,65 @@
+* {
+	font-size: 24px;
+}
+
+
+.wrapper	{
+	width: 80%;
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+/* :link for unvisited link*/
+a:link	{
+	color: #008000;
+}
+
+/* :link for visited link*/
+a:visited	{
+	color: #006666;
+}
+
+/* when you press tab and the link gets selected*/
+a:focus {
+	color: #992600;
+}
+
+a:hover	{
+	background-color: gray;
+}
+
+main.wrapper:hover	{
+	background-color: lightblue;
+}
+
+a.active {
+	color: #004d99;
+}
+
+p,
+#test,
+.spans,
+.box p {
+	color: #99004d;
+}
+
+a[target="_blank"]	{
+	background-color: yellow;
+}
+
+div + p {
+	background-color: lightgreen;
+}
+
+div ~ p {
+	background-color: red;
+}
+
+div > p {
+	background-color: blue;
+}
+
+div div p	{
+	background-color: orange;
+}
