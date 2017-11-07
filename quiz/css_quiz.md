@@ -3,14 +3,14 @@
 ## Multiple Choice. Choose your best answer by putting emphasis (`*your answer*`) or strong (`**your answer**`) to the line of your choice.
 
 ### What does CSS stand for?
-**- Cascading Style Sheets**
+- **Cascading Style Sheets**
 - Colorful Style Sheets
 - Computer Style Sheets
 - Creative Style Sheets
 
 ### What is the correct HTML for referring to an external style sheet?
 - ```<link rel="stylesheets" type="text/css" href="mystyle.css">``` 
-**- ```<link rel="stylesheet" type="text/css" href="style.css">```**
+- **```<link rel="stylesheet" type="text/css" href="style.css">```**
 - ```<link href="stylesheet" type="text/css" src="mystyle.css">``` 
 - ```<link src="stylesheet" type="text/css" href="mystyle.css">``` 
 
@@ -23,11 +23,11 @@
 ### Which HTML tag is used to define an internal style sheet?
 - ```<css>```
 - ```<script>```
-**- ```<style>```**
+- **```<style>```**
 - ```<styles>```
 
 ### Which HTML attribute is used to define inline styles?
-**- Style**
+- **Style**
 - Styles
 - Font
 - Class
@@ -45,7 +45,7 @@
 - ```<!-- this is a comment -->```
 
 ### How do you add a background color for all <h1> elements?
-**- h1 {background-color: #FFFFFF;}**
+- **h1 {background-color: #FFFFFF;}**
 - all.h1 {background-color: #FFFFFF;}
 - h1.all {background-color: #FFFFFF;}
 - #h1 {background-color: #FFFFFF;}
@@ -53,41 +53,41 @@
 ### How do you select an element with id "demo"?
 - *demo
 - .demo
-**- #demo**
+- **#demo**
 - Demo
 
 ### How do you select elements with class name "test"?
 - #test
 - Test
 - *test
-**- .test**
+- **.test**
 
 ### How do you select all p elements inside a div element?
 - div + p
-**- div p**
+- **div p**
 - div.p
 - div ~ p
 
 ### How do you group selectors?
 - Separate each selector with a space
 - Separate each selector with a plus sign
-**- Separate each selector with a comma**
+- **Separate each selector with a comma**
 - Separate each selector with a dot
 
 ### Which pseudo class selects links that are currently being hovered over by the mouse pointer?
 - :link
 - :visited
 - :focus
-**- :hover**
+- **:hover**
 
 ### If two selectors apply to the same element, the one with lower specificity wins.
 - True
-**- False**
+- **False**
 
 ### It is the main international standards organization for the World Wide Web
 - WWW
 - W3
-**- W3C**
+- **W3C**
 - C3W
 
 ### (5 pts) Identify the parts of the CSS Rule-set below:
