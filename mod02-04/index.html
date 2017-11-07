@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Activity 3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Carter+One|Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="">
+			<header>
+				<span>Yo mama</span>
+			</header>
+
+			<main>
+				<section class="section1">
+					<div>
+						<h3 class="inline-blocked"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</h3>
+					</div>
+
+					<div class="thumbnail inline-blocked">
+						<div class="circle" id="postthumb">
+							<i class="fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+						</div>
+						<div class="inline-blocked">
+							<p class="thumbtext">5</p> 
+							<p class="thumbtext">rants</p>
+						</div>	
+					</div>
+					
+					<div class="thumbnail inline-blocked" >
+						<div class="circle" id="imagethumb">
+							<i class="fa fa-picture-o" aria-hidden="true"></i>
+						</div>
+						<div class="inline-blocked">
+							<p class="thumbtext">13</p>
+							<p class="thumbtext">selfies</p>
+						</div>	
+					</div>
+
+				</section>
+
+				<section class="section2">
+						<h3><i class="fa fa-rocket" aria-hidden="true"></i> New Rant</h3>
+						<form class="hideoverflow" action="" method="">
+							<input id="posttitle" type="text" name="title" placeholder="Enter your post title">
+							<br>
+							<textarea id="postbody" placeholder="Enter post content here"></textarea>
+							<br>
+							<button class="btn btn-blue" type="submit" name="publish" value="Publish">GRAAAAHHH!!!</button>
+						</form>
+				</section>
+
+				<section>
+						<h3><i  class="fa fa-user-circle" aria-hidden="true"></i> Upload Selfie</h3>
+						
+						<div class="img-set-pack">
+							<img src="http://lorempixel.com/200/200" class="img-set" alt="image">
+							<img src="http://lorempixel.com/200/200" class="img-set" alt="image">
+							<img src="http://lorempixel.com/200/200" class="img-set" alt="image">
+							<img src="http://lorempixel.com/200/200" class="img-set" alt="image">
+							<img src="http://lorempixel.com/200/200" class="img-set" alt="image">
+						</div>
+
+						<form class="hideoverflow" action="" method="post">
+							<button class="btn btn-blue" type="button" id="image" value="Browse">Browse</button>
+							<button class="btn btn-green" type="button" name="publish" value="Upload">Upload</button>
+						</form>
+
+			</main>
+			<footer>KatB &copy; 2017</footer>
+		</div>
+	</div>
+</body>
+</html>

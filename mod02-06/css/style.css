@@ -1,0 +1,49 @@
+*	{
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	border: 1px solid red;
+	width: 70%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+div.wrapper > div,
+div.wrapper > div > div {
+	border: 2px solid #5d6063;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: skyblue;
+	margin-top: 20px;
+}
+
+h1,
+p	{
+	background-color: #dde0e3;
+	text-align: center;
+}
+
+h1	{
+	padding: 50px;
+	border: 1px solid #5d6063;
+}
+
+/* from inline type to block type elements */
+em,
+strong	{
+	background-color: #b2d6ff;
+	display: inline;
+}
+
+strong	{
+	/*padding: 50px;*/
+	margin: 50px;
+}
+
+p {
+	padding: 20px 0px 20px 10px;
+	margin-top: 25px;
+}

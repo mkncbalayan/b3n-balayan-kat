@@ -115,6 +115,6 @@
     
     section .important-text span: 12
     
-    main #comment #reply : 21
+    main #comment #reply : 201
     
     nav > ul > li > a:hover : 14
