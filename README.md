@@ -7,3 +7,7 @@
 ## 2017-10-25
 ### Topic: Getting started with GitLab
 This is my first feedback.
+
+## 2017-11-08
+### Git
+I hope we can discuss in detail how git works.
