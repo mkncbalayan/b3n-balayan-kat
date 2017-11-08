@@ -30,12 +30,12 @@ alert(s);
 
 ## Emoji
 
-	:monkey:
+:monkey:
 
-	:star2:
+:star2:
 
-	:speach_balloon:
+:speach_balloon:
 
-	:zap:
+:zap:
 
-	:v:
+:v:
