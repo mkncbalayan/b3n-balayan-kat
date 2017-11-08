@@ -34,7 +34,7 @@ alert(s);
 
 :star2:
 
-:speach_balloon:
+:speech_balloon:
 
 :zap:
 
