@@ -30,12 +30,21 @@ alert(s);
 
 ## Emoji
 
-	:monkey:
+:monkey:
 
-	:star2:
+:star2:
 
-	:speach_balloon:
+:speech_balloon:
 
-	:zap:
+:zap:
 
-	:v:
+:v:
+
+
+## Tables
+
+| firstname | lastname |
+|:----------|:---------|
+| kat       | balayan  |
+| johnny    | depp     |
+| alan      | rickman  |
