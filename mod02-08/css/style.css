@@ -1,0 +1,35 @@
+/*CSS reset*/
+*	{
+	padding: 0;
+	margin: 0;
+}
+
+.grandparent {
+	background-color: skyblue;
+}
+
+.parent	{
+	background-color: pink;	
+}
+
+div	{
+	padding: 20px;
+}
+
+p 	{
+	position: static;
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/
+}
+
+input[name="firstname"] {
+	margin-right: 20px;
+}
+
+strong	{
+	position: relative;
+	/*left: 50px; relative to original position; add 50px to the left*/
+	top: 100px;
+	left: 100px;
+	background-color: yellow;
+}
