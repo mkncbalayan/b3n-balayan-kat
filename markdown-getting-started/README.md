@@ -38,6 +38,7 @@ alert(s);
 
 :zap:
 
+<<<<<<< HEAD
 :v:
 
 
@@ -48,3 +49,6 @@ alert(s);
 | kat       | balayan  |
 | johnny    | depp     |
 | alan      | rickman  |
+=======
+:v:
+>>>>>>> 2cb6a8859e3f94aae7103af63c16279586465a8e
