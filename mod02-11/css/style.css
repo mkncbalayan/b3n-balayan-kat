@@ -1,0 +1,164 @@
+*	{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.wrapper	{
+	width: 80%;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+.container	{
+	margin-bottom: 50px;
+	width: 700px;
+	padding: 10px;
+	background-color: #99CC99;
+	float: left;
+	overflow: hidden;
+	color: #003366;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	margin:10px;
+	float: left;
+	background-color: #993300;
+	border-radius: 5px;
+}
+
+.caption-border	{
+	border: 1px solid white;
+	float: left;
+	padding: 10px;
+	padding-bottom: 50px;
+	margin: 5px;
+}
+
+.box2	{
+	width: 150px;
+	height: 150px;
+	float: left;
+	background-color: #993300;
+	margin-bottom:10px;
+	border-radius: 5px;
+}
+
+.caption2 {
+	margin:10px;
+	text-align: center;
+}
+
+.title3	{
+	margin-bottom: 10px;
+}
+
+.content-image	{
+	float: left;
+	margin: 10px;
+}
+
+.content {
+	float: left;
+}
+
+p {
+	margin: 5px;
+}
+
+#harrison	{
+	width: 20%;
+}
+
+#em	{
+	position: relative;
+	overflow: hidden;
+}
+
+#comment	{
+	width: 7%;
+	height: 50px;
+	float: left;
+	margin: 5px;
+
+}
+
+.textarea	{
+	width: 90%;
+	height: 50px;
+	float: left;
+	margin: 5px;
+}
+
+.button	{
+	float: right;
+	margin-right: 2px;
+	padding:2px;
+}
+
+.commentimg	{
+	width: 50px;
+	height: 50px;
+	background-color: #993300;
+	float: left;
+	margin: 0 10px 0 0;
+	border-radius: 5px;
+}
+
+.commentbox	p {
+	font-style: italic;
+	overflow: hidden;
+}
+
+.commentbox	{
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.subcomment	{
+	margin: 40px 0 0 50px;
+	border-left: 1px solid white;
+	padding: 3px;
+}
+
+.commentlink {
+	text-align: left;
+	overflow: hidden;
+}
+
+#valentines	{
+	width: 500px;
+}
+
+#valentinesimg	{
+	width: 40%;
+	height: 100px;
+}
+
+#apartment 	{
+	width: 400px;
+	overflow: hidden;
+	clear: both;
+}
+
+#apartmentimg	{
+	width: 40%;
+	height: 100px;
+	float: right;
+}
+
+.img {
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
