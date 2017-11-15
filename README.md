@@ -11,3 +11,7 @@ This is my first feedback.
 ## 2017-11-08
 ### Git
 I hope we can discuss in detail how git works.
+
+##2017-11-15
+###CSS Floats and Clears
+Very very challenging activity. Can't wait for the explanation haha
