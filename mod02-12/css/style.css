@@ -1,0 +1,100 @@
+*	{  
+	box-sizing: border-box;
+}
+
+/* removes default margin from document*/
+body	{
+	margin: 0;
+}
+
+.nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+
+}
+
+.logo	{
+	width: 140px;
+	height: 140px;
+	background-color: darkgrey;
+}
+
+
+/*
+*
+*Navigation
+*
+*/
+.nav	{
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+}
+
+ul	{
+	padding-left: 0;
+}
+
+
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 2px;
+	text-align: center;
+	line-height: 48px;
+	/*padding: 20px;*/
+}
+
+ul > li > a {
+	text-decoration: none;
+}
+
+.main {
+	background-color: grey;
+	margin-left: 200px;
+}
+
+/*
+* Banner
+*/
+
+.banner	{
+	background-color: skyblue;
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	margin: 50px 50px;
+}
+
+.about	{
+	background-color: indianred;
+	height: 700px;
+}
+
+.services	{
+	background-color: midnightblue;
+	height: 300px;
+}
+
+.projects	{
+	background-color: crimson;	
+	height: 300px;
+}
+
+.gallery	{
+	background-color: orange;
+	height: 400px;
+}
+
+.footer	{
+	background-color: green;
+	height: 70px;
+}
