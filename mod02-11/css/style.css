@@ -5,19 +5,21 @@
 }
 
 .wrapper	{
-	width: 80%;
+	width: 65%;
 	margin: 10px auto;
 	overflow: hidden;
 }
 
 .container	{
-	margin-bottom: 50px;
+	margin: 50px auto;
 	width: 700px;
 	padding: 10px;
 	background-color: #99CC99;
 	float: left;
 	overflow: hidden;
 	color: #003366;
+	height: auto;
+
 }
 
 .box {
@@ -92,6 +94,12 @@ p {
 	margin: 5px;
 }
 
+textarea {
+	width: 100%;
+	resize: vertical;
+	overflow: auto;
+}
+
 .button	{
 	float: right;
 	margin-right: 2px;
@@ -113,7 +121,7 @@ p {
 }
 
 .commentbox	{
-	margin-bottom: 5px;
+	margin-bottom: 15px;
 	border-radius: 5px;
 }
 
@@ -121,6 +129,10 @@ p {
 	margin: 40px 0 0 50px;
 	border-left: 1px solid white;
 	padding: 3px;
+}
+
+div.username + div {
+	margin-left: 60px;
 }
 
 .commentlink {
@@ -138,7 +150,7 @@ p {
 }
 
 #apartment 	{
-	width: 400px;
+	width: 500px;
 	overflow: hidden;
 	clear: both;
 }
@@ -147,16 +159,38 @@ p {
 	width: 40%;
 	height: 100px;
 	float: right;
+	clear: all;
+	margin: 0;
 }
 
 .img {
 	float: left;
+	width: 60%;
+	clear: all;
 }
 
+.leftapple	{
+	width: 30%;
+	overflow: hidden;
+	clear: all;
+	margin:0;
+	float: left;
 
+}
 
+.rightapple {
+	width: 70%;
+	float: left;
+	overflow: hidden;
+	clear: all;
+}
 
-
+.boxapple	{
+	width: 150px;
+	height: 150px;
+	margin: 0 5px 5px 0;
+	padding:0;
+}
 
 
 
