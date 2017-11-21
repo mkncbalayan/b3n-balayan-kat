@@ -18,12 +18,32 @@ body	{
 
 }
 
-.logo	{
+h1,
+h2,
+h3,
+h4	{
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo,
+.logo > img	{
 	width: 140px;
 	height: 140px;
 	background-color: darkgrey;
+	overflow: hidden;
+	/*object-fit: cover;*/
+	/*object-position: 50% 50%;*/
+	border-radius: 50%;
 }
 
+.logo > img {
+	object-position: center;
+}
 
 /*
 *
@@ -35,20 +55,32 @@ body	{
 	height: 100%;
 	width: 200px;
 	position: fixed;
+	background: #22c1c3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 ul	{
 	padding-left: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 
 ul > li {
 	list-style: none;
-	background-color: lightblue;
+	background-color: lightpink;
 	margin-bottom: 2px;
 	text-align: center;
 	line-height: 48px;
 	/*padding: 20px;*/
+	border-radius: 5px;
+}
+
+ul > li:hover	{
+	background-color:  #ff3377;
+	transform: scale(1.2);
+
 }
 
 ul > li > a {
@@ -65,13 +97,29 @@ ul > li > a {
 */
 
 .banner	{
-	background-color: skyblue;
+	background: #4568DC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	position: relative;
 	height: 700px;
+	/*background-image: url(url);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	***background stays while hovering
+	*/
+}
+
+.banner:hover	{
+	background: #3A1C71;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .box {
 	border: 5px solid white;
+	border-style: double;
 	text-align: center;
 	width: 40%;
 	padding: 40px;
@@ -97,7 +145,7 @@ ul > li > a {
 */
 
 .services	{
-	background-color: midnightblue;
+	background-color:  #4db8ff;
 	min-height: 300px;
 }
 
@@ -131,7 +179,7 @@ ul > li > a {
 }
 
 .projects	{
-	background-color: crimson;	
+	background-color:   #ff80aa;	
 	min-height: 300px;
 }
 
@@ -177,4 +225,10 @@ img[alt*="Social"] {
 
 .contact	{
 	float: right;
+	clear: left;
+	overflow: hidden;
+}
+
+small	{
+	display: -inline-block;
 }
