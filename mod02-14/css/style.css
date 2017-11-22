@@ -1,0 +1,125 @@
+ css reset */
+*	{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body	{
+	background-color: lightgrey;
+}
+
+.wrapper {
+	background-color: #FFF;
+	width: 	80%;
+	margin: 	20px auto;
+	padding: 	20px;
+}
+
+.item > *	{
+	margin: 	10px;
+}
+
+.header	{
+	margin: 15px auto;
+}
+
+/*item1*/
+.box1		{
+	width: 140px;
+	height: 140px;
+	background-color: yellow;
+	margin: 5px;
+}
+
+/*item 2*/
+
+#blue	{
+	background-color: blue;
+	width: 140px;
+	height: 140px;
+}
+
+.box2a	{
+	width: 80%;
+	height: 100%;
+	background-color: yellow;
+	margin: 0 auto;
+}
+
+/*item 2 - can also use border*/
+
+/*item 3*/
+
+.border {
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 0 10px 0 10px;
+	display: inline;
+}
+
+/*item 4*/
+
+#circle	{
+	background-color: #ffb3b3;
+	border-radius: 50%;
+	position: relative; /*to position text centrally; partnered with child that is absolute*/
+}
+
+/*item 5*/
+
+#circle > p {
+	color: red;
+
+	margin: 0;
+	position: absolute;/*child absolute*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*
+alternative solution for item 5
+
+p {
+	text-align: center;
+	line-height:140px; <-same as height of div
+}*/
+
+/*item 6*/
+
+.divborder	{
+	height: 400px;
+	width: 60%;
+	border: 1px solid black;
+	position: relative;
+}
+
+.floralborder	{
+	width: 150px; /*if width w/o height - item is resized depending on ratio*/
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	left:0;
+}
+
+/*item 7*/
+
+.divborder2	{
+	height: 200px;
+	width: 60%;
+	border: 1px solid black;
+	position: relative;
+}
+
+.sun {
+	width: 60px;
+	position: absolute;
+}
+
+.coconut {
+	width: 60px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
