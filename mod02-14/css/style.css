@@ -123,3 +123,84 @@ p {
 	bottom: 0;
 	right: 0;
 }
+
+/*item 8*/
+.summer	{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*item 9*/
+
+.dog	{
+	width: 100px;
+	border: 1px	solid black;
+	border-radius: 50%;
+}
+
+/*item 10*/
+
+.divborder3	{
+	width: 400px;
+	height: 100px;
+	border: 1px solid black;
+	position: relative;
+	top: 50%;
+}
+
+.arf	{
+	position: absolute;
+	/*alternate
+	line-height: same as height of parent div*/
+	display: inline;
+	top: 50%;	
+	transform: translate(0,-50%);
+}
+
+/*item 11*/
+
+.divborder4	{
+	width: 400px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.red {
+	width: 50px;
+}
+
+/*item 12*/
+
+.littletext	{
+	background-color: #ff6666;
+}
+
+.littletext > p {
+	padding: 15px;
+	margin: 0;
+}
+
+.littlered	{
+	margin: 15px auto;
+}
+
+/*item 13*/
+
+td,
+th {
+	text-align: center;
+	border:1px solid black;
+	padding: 5px 8px;
+}
+
+table		{
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #000;
+	color: white;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Maria Katrina Naomi Balayan
 ## tuitt-br01-b3nc-08
 ## Kat
@@ -15,3 +16,6 @@ I hope we can discuss in detail how git works.
 ##2017-11-15
 ###CSS Floats and Clears
 Very very challenging activity. Can't wait for the explanation haha
+=======
+# mkncbalayan.github.io
+>>>>>>> 17f94c5d979e6ce6997fe70d918d9e018b3c108a
