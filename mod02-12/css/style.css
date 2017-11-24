@@ -107,6 +107,8 @@ ul > li > a {
 	background-attachment: fixed;
 	background-size: cover;
 	***background stays while hovering
+
+	background-position:center,left,right;
 	*/
 }
 
