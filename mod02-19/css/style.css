@@ -1,0 +1,16 @@
+.well,
+.btn,
+.panel,
+.pager {
+	border-radius: 0;
+}
+
+.well {
+	background-color: lightgreen;
+}
+
+.navbar-inverse	{
+	background-color: blue;
+	border: 1px solid blue;
+	border-radius: 0;
+}
