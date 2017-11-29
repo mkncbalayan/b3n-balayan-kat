@@ -1,23 +1,108 @@
-.navbar-default	{
-	margin-bottom: 0;
+/* FONTS */
+
+@font-face {
+	font-family: 'RunWild';
+	src: url('../font/RunWild-Demo.ttf');
 }
 
+@font-face {
+	font-family: 'Sketchalot';
+	src: url('../font/Sketchalot.ttf');
+}
+
+
+@font-face {
+	font-family: 'Florsn17';
+	src: url('../font/Florsn17.ttf');
+}
+
+/*
+~LINKED FONTS~
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+
+
+/* DEFAULT MOBILE */
+/* GENERAL */
+.navbar-inverse,
+.mkfooter	{
+	margin-bottom: 0;
+	background: #16222A;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #FFF;
+}
 
 .mkmain,
 .mkheader,
 .mkintro,
 .mkcountries,
-.mkattractions,
 .mkfooter {
-	border: 1px solid black;
-	/*height: 200px;*/
-	padding: 0;
+/*	border: 1px solid black;
+*/	/*height: 200px;*/
+	padding: 50px;
 	margin: 0;
 	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.mkattractions {
+	margin: 0 0 20px 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.next img	{
+	width: 30px;
+	height: 30px;
+	/*background-color: lightblue;
+	color: white;
+	border-radius: 50%;*/
+	display: inline;
+	margin: 15px;
+}
+
+h1,
+h2 {
+	font-family: 'RunWild';
+}
+
+h1	{
+	padding:0;
+	margin: 0;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 0;
+}
+
+/* NAVBAR */
+.navbar-inverse {
+	font-family: 'Florsn17';
+	font-weight: bolder;
+}
+
+.navbar-header {
+	font-family: 'Sketchalot';
+	color: #FFF;
 }
 
 .navbar-brand	{
+	font-size: 0;
 	padding: 5px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-right li {
+	color: #FFF;
 }
 
 .navbar-brand img {
@@ -26,12 +111,162 @@
 	display: inline;
 }
 
-.mkfooter	{
-	background-color: green;
+/* HEADER */
+
+.mkheader {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+/*	width: 100%;
+	height: 100%;*/
+	background-color: skyblue;
+    background-image: url(../img/SEAblankmap.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 20% 60%;
+    position: relative;
+    min-height: 300px;
+    padding-bottom: 0;
+}
+
+
+/* INTRO */
+.mkintro {
+	background-color: skyblue;
+    background-image: url(https://www.peregrinetraveladelaide.com.au/wp-content/uploads/2015/11/vietnam_vendor-selling-fruit-veges-canal-900x400.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 20% 60%;
+    position: relative;
+    min-height: 300px;
+    padding-bottom: 0;
+}
+
+.introductioncontent	{
+/*	text-align: center;*/
+	padding: 0 0;
+	overflow: hidden;
+	width: 100%;
+	background-color: rgba(255,255,255,0.7);
+/*	border: 1px double white;*/
+	margin: 20px auto;
+}
+
+.introductioncontent p {
+	margin: 30px 10px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	text-align: center;
+}
+
+.introductioncontent span	{
+	font-weight: bolder;
+}
+/* COUNTRIES */
+.mkcountries {
+	background: #fd746c;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.countrylist	{
+	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	margin-top: 20px;
+	padding-top: 30px
+}
+
+.country {
+	margin-bottom: 30px;
+}
+
+.country img {
+	width: 50px;
+	height: 25px;
+	border-radius: 5px;
+/*	border: 1px black solid;*/
 }
 
 
 
+/* ATTRACTIONS */
+
+#carousel-example-generic {
+	background-color: #000;
+}
+
+.carousel-caption {
+	background-color: rgba(255,255,255,0.7);
+	color: black;
+	/*margin-bottom: -5px;*/
+}
+
+.mkattractions	{
+	padding: 0;
+	margin: 0;
+}
+
+/* FOOTER */
+
+.mkfooter	{
+	/*height: 150px;*/
+}
+
+div.socmed img {
+	width: 48px;
+	border-radius: 50%;
+}
+
+/* TABLET DEVICES*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.navbar-brand,
+	.navbar-nav	{
+		font-size: 14px;
+	}
+
+	.country img {
+		width: 100px;
+		height: 50px;
+		border-radius: 5px;
+	/*	border: 1px black solid;*/
+	}
+
+	.introductioncontent	{
+	/*	text-align: center;*/
+		padding: 0 20px;
+		overflow: hidden;
+		width: 70%;
+		background-color: rgba(255,255,255,0.7);
+	/*	border: 1px double white;*/
+		margin: 20px auto;
+	}
+
+}
+
+
+/*DESKTOP */
+@media only screen and (min-width: 961px) {
+	.navbar-brand,	
+	.navbar-nav {
+		font-size: 14px;
+	}	
+
+	.introductioncontent	{
+	/*	text-align: center;*/
+		padding: 0 20px;
+		overflow: hidden;
+		width: 70%;
+		background-color: rgba(255,255,255,0.7);
+	/*	border: 1px double white;*/
+		margin: 20px auto;
+	}
+}
+
+
+
+/* CLEAR */
 
 .clear:after {
 	content: "";
