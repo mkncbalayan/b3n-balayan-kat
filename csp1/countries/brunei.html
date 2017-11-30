@@ -38,11 +38,11 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="../index.html">Home</a></li>
-					<li><a class="current" href="#">Countries</a></li>
+					<li><a href="countries.html">Countries</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">List <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="brunei.html">Brunei</a></li>
+							<li><a class="current" href="brunei.html">Brunei</a></li>
 							<li><a href="cambodia.html">Cambodia</a></li>
 							<li><a href="indonesia.html">Indonesia</a></li>
 							<li><a href="laos.html">Laos</a></li>
@@ -60,78 +60,84 @@
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-	
+
 	<div class="wrapper">
 
-		<div class="container-fluid mkheader">
-			<h1 class="animated bounce">Southeast Asia</h1>
+		<div class="container-fluid mkheadercountry">
+			<h1 class="animated pulse infinite">Brunei</h1>
 		</div> <!-- mk header -->
 
 
-		<div class="container-fluid mkcountries" id="countrymainid">
+		<div class="container-fluid row mkmediacountry">
 
-			<h2>Countries</h2>
+			<div class="mkmedia col-xs-12 col-sm-8 col-lg-10">
 
-			<div class="countrylist row clear">
 
-				<div class="brunei country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="brunei.html">
+
+
+			</div> <!-- media content -->
+
+			<div class="container-fluid countrylist col-xs-12 col-sm-4 col-lg-2">
+
+				<div class="brunei country col-xs-4 col-sm-6"><a class="current" href="brunei.html">
 					<img src="../img/brunei-flag.png" alt="Brunei Flag">
 					<p>Brunei</p></a>
 				</div> <!-- Brunei -->
 
-				<div class="cambodia country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="cambodia.html">
+				<div class="cambodia country col-xs-4 col-sm-6"><a href="cambodia.html">
 					<img src="../img/cambodia-flag.png" alt="Cambodia Flag">
 					<p>Cambodia</p></a>
 				</div> <!-- Cambodia -->
 
-				<div class="indonesia country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="indonesia.html">
+				<div class="indonesia country col-xs-4 col-sm-6"><a href="indonesia.html">
 					<img src="../img/indonesia-flag.png" alt="Indonesia Flag">
 					<p>Indonesia</p></a>
 				</div> <!-- Indonesia -->
 
-				<div class="laos country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="laos.html">
+				<div class="laos country col-xs-4 col-sm-6"><a href="laos.html">
 					<img src="../img/laos-flag.png" alt="Laos Flag">
 					<p>Laos</p></a>
 				</div> <!-- Laos -->
 
-				<div class="malaysia country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="malaysia.html">
+				<div class="malaysia country col-xs-4 col-sm-6"><a href="malaysia.html">
 					<img src="../img/malaysia-flag.png" alt="Malaysia Flag">
 					<p>Malaysia</p></a>
 				</div> <!-- Malaysia -->
 
-				<div class="myanmar country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="myanmar.html">
+				<div class="myanmar country col-xs-4 col-sm-6"><a href="myanmar.html">
 					<img src="../img/myanmar-flag.png" alt="Myanmar Flag">
 					<p>Myanmar</p></a>
 				</div> <!-- Myanmar -->
 
-				<div class="philippines country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="philippines.html">
+				<div class="philippines country col-xs-4 col-sm-6"><a href="philippines.html">
 					<img src="../img/philippines-flag.png" alt="Philippines Flag">
 					<p>Philippines</p></a>
 				</div> <!-- Philippines -->
 
-				<div class="singapore country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="singapore.html">
+				<div class="singapore country col-xs-4 col-sm-6"><a href="singapore.html">
 					<img src="../img/singapore-flag.png" alt="Singapore Flag">
 					<p>Singapore</p></a>
 				</div> <!-- Singapore -->
 
-				<div class="thailand country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="thailand.html">
+				<div class="thailand country col-xs-4 col-sm-6"><a href="thailand.html">
 					<img src="../img/thailand-flag.png" alt="Thailand Flag">
 					<p>Thailand</p></a>
 				</div> <!-- Thailand -->
 
-				<div class="timorleste country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="timorleste.html">
+				<div class="timorleste country col-xs-4 col-sm-6"><a href="timorleste.html">
 					<img src="../img/timorleste-flag.png" alt="Timor-Leste Flag">
 					<p>Timor-Leste</p></a>
 				</div> <!-- Timor-Leste -->
 
-				<div class="vietnam country col-xs-4 col-sm-4 col-md-4 col-lg-2"><a href="vietnam.html">
+				<div class="vietnam country col-xs-4 col-sm-6"><a href="vietnam.html">
 					<img src="../img/vietnam-flag.png" alt="Vietnam Flag">
 					<p>Vietnam</p></a>
 				</div> <!-- Vietnam -->
+			</div>	<!-- countrylist -->
+		</div>
 
-			</div> <!-- country list -->
-		</div> <!-- countries -->
-	</div> <!-- wrapper -->
+	</div><!-- wrapper -->
+
 
 	<div class="container-fluid mkfooter">
 
@@ -151,12 +157,11 @@
 	</div> <!-- footer -->
 
 
-		<!-- import jQuery -->
+	<!-- import jQuery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 	integrity="ha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
 </body>
 </html>
