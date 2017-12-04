@@ -29,10 +29,7 @@ font-family: 'Rubik', sans-serif;
 .navbar-inverse,
 .mkfooter	{
 	margin-bottom: 0;
-	background: #16222A;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #FFF;
+	background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
 }
 
 .mkmain,
@@ -124,28 +121,29 @@ h1	{
     padding-bottom: 0;
     padding-top: 50px;
     background-color: red;
-/*    position: relative;*/
+    position: relative;
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 20% 60%;
 }
 
-.mkheadercountry h1 {
+.countryh1 {
 	color: black;
 	position: relative;
-	/*left: 50%;*/
+/*	left: 50%;*/
 	top: 35%;
-	transform: translate(0,-50%);
+	transform: translate(0%,-50%);
 	padding: 0;
 	text-align: center;
+	background-color: rgba(255,255,255,0.4);
 }
 
-.mkmediacountry,
 .mkauthor {
 	padding: 50px 0 0 0;
 }
 
-.mkmediacountry > .mkmedia,
-.mkmediacountry > .countrylist {
-	padding:0;
-}
 
 .current {
    pointer-events: none;
@@ -207,9 +205,7 @@ h1	{
 }
 /* COUNTRIES */
 .mkcountries {
-	background: #fd746c;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #ff9068, #fd746c);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #ff9068, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: linear-gradient(-225deg, #FFEEFF 0%, #D7FFFE 100%);
 }
 
 .countrylist	{
@@ -230,7 +226,49 @@ h1	{
 /*	border: 1px black solid;*/
 }
 
+.mkheaderbrunei	{
+    background-image: url(../img/brunei-header.jpg);
+}
 
+.mkheadercambodia {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheaderindonesia {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheaderlaos {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheadermalaysia {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheadermyanmar {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheaderphilippines {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheadersingapore {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheaderthailand {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheadertimorleste {
+    background-image: url(../img/SEAblankmap.jpg);
+}
+
+.mkheadervietnam {
+    background-image: url(../img/SEAblankmap.jpg);
+}
 
 /* ATTRACTIONS */
 
@@ -252,6 +290,7 @@ h1	{
 /* FOOTER */
 
 .mkfooter	{
+	display: block;
 	/*height: 150px;*/
 }
 
@@ -259,6 +298,35 @@ div.socmed img {
 	width: 48px;
 	border-radius: 50%;
 }
+
+
+/* COUNTRY CONTENT */
+
+.mkmedia > *	{
+	border: 1px solid black;
+/*	height: 200px;*/
+	/*padding-left: 10%;*/
+	margin-bottom: 30px;
+}
+
+.mkmedia {
+	margin-bottom: 20px;
+}
+
+.mkmediacountry	{
+	margin: 20px;
+	height: 1000px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.mkmediacountry > * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
 
 /* TABLET DEVICES*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -312,6 +380,10 @@ div.socmed img {
 		background-color: rgba(255,255,255,0.7);
 	/*	border: 1px double white;*/
 		margin: 20px auto;
+	}
+
+	.mkmediacountry {
+		height: 100vh;
 	}
 }
 
