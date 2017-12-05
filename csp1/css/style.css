@@ -37,8 +37,6 @@ font-family: 'Rubik', sans-serif;
 .mkintro,
 .mkcountries,
 .mkfooter {
-/*	border: 1px solid black;
-*/	/*height: 200px;*/
 	padding: 50px 0 50px 0;
 	margin: 0;
 	width: 100%;
@@ -56,9 +54,6 @@ font-family: 'Rubik', sans-serif;
 .next img	{
 	width: 30px;
 	height: 30px;
-	/*background-color: lightblue;
-	color: white;
-	border-radius: 50%;*/
 	display: inline;
 	margin: 15px;
 }
@@ -72,15 +67,30 @@ h1	{
 	padding:0;
 	margin: 0;
 	position: relative;
-/*	left: 50%;*/
 	top: 50%;
 	transform: translate(-50%,-50%);
 	padding: 0;
 }
 
+h3	{
+	margin: 20px;
+}
+
+.basiccountryinfoheader,
+.socialinfoheader,
+.sightingsheader	{
+	text-align: center;
+	margin: 30px;
+}
+
+span.countryspan {
+	font-family: 'Sketchalot';
+
+}
+
 /* NAVBAR */
 .navbar-inverse {
-	font-family: 'Florsn17';
+	font-family: 'Raleway';
 	font-weight: bolder;
 }
 
@@ -115,7 +125,7 @@ h1	{
 
 .mkheadercountry {
 	width: 100%;
-	height: 300px;
+	height: 450px;
 	overflow: hidden;
     min-height: 300px;
     padding-bottom: 0;
@@ -125,19 +135,19 @@ h1	{
     background-color: skyblue;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: auto;
     background-size: cover;
-    background-position: 20% 60%;
+    background-position: center;
 }
 
 .countryh1 {
 	color: black;
 	position: relative;
-/*	left: 50%;*/
 	top: 35%;
 	transform: translate(0%,-50%);
 	padding: 0;
 	text-align: center;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.7);
 }
 
 .mkauthor {
@@ -156,8 +166,6 @@ h1	{
 	width: 100%;
 	height: 300px;
 	overflow: hidden;
-/*	width: 100%;
-	height: 100%;*/
 	background-color: skyblue;
     background-image: url(../img/SEAblankmap.jpg);
     background-repeat: no-repeat;
@@ -184,12 +192,10 @@ h1	{
 }
 
 .introductioncontent	{
-/*	text-align: center;*/
 	padding: 0 0;
 	overflow: hidden;
 	width: 80%;
 	background-color: rgba(255,255,255,0.7);
-/*	border: 1px double white;*/
 	margin: 20px auto;
 }
 
@@ -203,6 +209,13 @@ h1	{
 .introductioncontent span	{
 	font-weight: bolder;
 }
+
+
+
+
+
+
+
 /* COUNTRIES */
 .mkcountries {
 	background-image: linear-gradient(-225deg, #FFEEFF 0%, #D7FFFE 100%);
@@ -223,51 +236,55 @@ h1	{
 	width: 50px;
 	height: 25px;
 	border-radius: 5px;
-/*	border: 1px black solid;*/
 }
 
+
+
+
+
+/*COUNTRYHEADERS*/
 .mkheaderbrunei	{
     background-image: url(../img/brunei-header.jpg);
 }
 
 .mkheadercambodia {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/cambodia-header.jpg);
 }
 
 .mkheaderindonesia {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/indonesia-header.jpg);
 }
 
 .mkheaderlaos {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/laos-header.jpg);
 }
 
 .mkheadermalaysia {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/malaysia-header.jpg);
 }
 
 .mkheadermyanmar {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/myanmar-header.jpg);
 }
 
 .mkheaderphilippines {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/philippines-header.jpg);
 }
 
 .mkheadersingapore {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/singapore-header.jpg);
 }
 
 .mkheaderthailand {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/thailand-header.jpg);
 }
 
 .mkheadertimorleste {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/timorleste-header.jpg);
 }
 
 .mkheadervietnam {
-    background-image: url(../img/SEAblankmap.jpg);
+    background-image: url(../img/vietnam-header.jpg);
 }
 
 /* ATTRACTIONS */
@@ -290,8 +307,9 @@ h1	{
 /* FOOTER */
 
 .mkfooter	{
-	display: block;
-	/*height: 150px;*/
+	margin-top: 20px;
+	padding-top:20px;
+
 }
 
 div.socmed img {
@@ -299,13 +317,20 @@ div.socmed img {
 	border-radius: 50%;
 }
 
+.wrapper + .mkfooter {
+	margin-top: 0;
+}
+
+.mkfooter  p	{
+	margin-bottom: 0;
+}
+
+
 
 /* COUNTRY CONTENT */
 
 .mkmedia > *	{
 	border: 1px solid black;
-/*	height: 200px;*/
-	/*padding-left: 10%;*/
 	margin-bottom: 30px;
 }
 
@@ -326,6 +351,84 @@ div.socmed img {
 	box-sizing: border-box;
 }
 
+.sightings > .flora > p,
+.sightings > .fauna > p {
+	font-style: italic;
+	list-style: none;
+	margin: 0;
+}
+
+.sightings {
+	text-align: center;
+}
+
+.sightings > div {
+	margin-bottom: 30px;
+}
+
+.sightings span {
+	margin: 20px 0 20px 0;
+}
+
+
+
+
+
+
+/* ABOUT THE AUTHOR*/
+.wrapper > .mkauthor {
+	height: 100px;
+	text-align: center;
+	padding: 10px;
+}
+
+.mkauthor {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.mkauthorcontent	{
+	height: 300px;
+	padding: 50px;
+}
+
+.mkauthorcontent > div	{
+	margin-top: 30px;
+}
+
+#author {
+	background: #d9a7c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#authorlabel	{
+	font-family: 'RunWild';
+	font-size: 2em;
+	margin-left: 20px;
+	display: block;
+	overflow: hidden;
+}
+
+input,
+textarea	{
+	display: block;
+	/*padding-top: 10px;*/
+	margin-bottom: 20px;
+	font-family: 'Raleway';
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* TABLET DEVICES*/
@@ -335,20 +438,12 @@ div.socmed img {
 		font-size: 14px;
 	}
 
-	/*.country img {
-		width: 100px;
-		height: 50px;
-		border-radius: 5px;
-		border: 1px black solid;
-	}*/
 
 	.introductioncontent	{
-	/*	text-align: center;*/
 		padding: 0 20px;
 		overflow: hidden;
 		width: 70%;
 		background-color: rgba(255,255,255,0.7);
-	/*	border: 1px double white;*/
 		margin: 20px auto;
 	}
 
@@ -358,15 +453,12 @@ div.socmed img {
 /*DESKTOP */
 @media only screen and (min-width: 961px) {
 	
-	html,
+	/*html,
 	body {
 		height: 100vh;
 	}
-
-	.mkfooter	{
-		height: 30%;
-	}
-
+*/
+	
 	.navbar-brand,	
 	.navbar-nav {
 		font-size: 14px;
