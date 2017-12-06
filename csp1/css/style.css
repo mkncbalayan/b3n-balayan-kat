@@ -24,6 +24,12 @@ font-family: 'Rubik', sans-serif;
 
 
 
+
+
+
+
+
+
 /* DEFAULT MOBILE */
 /* GENERAL */
 .navbar-inverse,
@@ -85,13 +91,23 @@ h3	{
 
 span.countryspan {
 	font-family: 'Sketchalot';
-
 }
+
+
+
+
+
+
+
 
 /* NAVBAR */
 .navbar-inverse {
 	font-family: 'Raleway';
 	font-weight: bolder;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: black;
 }
 
 .navbar-header {
@@ -106,6 +122,10 @@ span.countryspan {
 
 .navbar-inverse .navbar-brand {
 	color: #FFF;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: black;
 }
 
 .navbar-right li {
@@ -160,6 +180,13 @@ span.countryspan {
    cursor: default;
 }
 
+
+
+
+
+
+
+
 /* HEADER */
 
 .mkheader {
@@ -176,6 +203,12 @@ span.countryspan {
     min-height: 300px;
     padding-bottom: 0;
 }
+
+
+
+
+
+
 
 
 /* INTRO */
@@ -242,6 +275,11 @@ span.countryspan {
 
 
 
+
+
+
+
+
 /*COUNTRYHEADERS*/
 .mkheaderbrunei	{
     background-image: url(../img/brunei-header.jpg);
@@ -287,6 +325,12 @@ span.countryspan {
     background-image: url(../img/vietnam-header.jpg);
 }
 
+
+
+
+
+
+
 /* ATTRACTIONS */
 
 #carousel-example-generic {
@@ -296,7 +340,10 @@ span.countryspan {
 .carousel-caption {
 	background-color: rgba(255,255,255,0.7);
 	color: black;
-	/*margin-bottom: -5px;*/
+}
+
+.carousel-slide	{
+	width: 100%;
 }
 
 .mkattractions	{
@@ -304,12 +351,31 @@ span.countryspan {
 	margin: 0;
 }
 
+.carousel-inner>.item>img,
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+	min-width: 100%;
+	max-height: 300px;
+}
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 
 .mkfooter	{
 	margin-top: 20px;
 	padding-top:20px;
+}
 
+.footerindex {
+	margin-top: 0;
 }
 
 div.socmed img {
@@ -324,6 +390,18 @@ div.socmed img {
 .mkfooter  p	{
 	margin-bottom: 0;
 }
+
+.mkfooter	small {
+	border-bottom: 1px dotted grey;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+
+
+
 
 
 
@@ -342,7 +420,6 @@ div.socmed img {
 	margin: 20px;
 	height: 1000px;
 	font-family: 'Raleway', sans-serif;
-
 }
 
 .mkmediacountry > * {
@@ -371,11 +448,19 @@ div.socmed img {
 }
 
 
+.basiccountryinfo,
+.socialinfo,
+.additionalinfo {
+	background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+	color: black;
+}
 
 
 
 
-/* ABOUT THE AUTHOR*/
+
+
+/* ABOUT */
 .wrapper > .mkauthor {
 	height: 100px;
 	text-align: center;
@@ -388,13 +473,18 @@ div.socmed img {
 }
 
 .mkauthorcontent	{
-	height: 300px;
+	height: 150px;
 	padding: 50px;
 }
 
 .mkauthorcontent > div	{
 	margin-top: 30px;
 }
+
+.mkauthorinfo	{
+	padding-top: 7%;
+}
+
 
 #author {
 	background: #d9a7c7;  /* fallback for old browsers */
@@ -414,7 +504,6 @@ div.socmed img {
 input,
 textarea	{
 	display: block;
-	/*padding-top: 10px;*/
 	margin-bottom: 20px;
 	font-family: 'Raleway';
 	width: 100%;
@@ -426,13 +515,8 @@ textarea	{
 
 
 
-
-
-
-
-
 /* TABLET DEVICES*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 401px) and (max-width: 767px) {
 	.navbar-brand,
 	.navbar-nav	{
 		font-size: 14px;
@@ -447,30 +531,29 @@ textarea	{
 		margin: 20px auto;
 	}
 
+
 }
 
 
 /*DESKTOP */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 768px) {
 	
-	/*html,
-	body {
-		height: 100vh;
-	}
-*/
-	
+
 	.navbar-brand,	
 	.navbar-nav {
 		font-size: 14px;
 	}	
 
+	.navbar-inverse .navbar-nav>li>a {
+		color: white;
+	}
+
+
 	.introductioncontent	{
-	/*	text-align: center;*/
 		padding: 0 20px;
 		overflow: hidden;
 		width: 70%;
 		background-color: rgba(255,255,255,0.7);
-	/*	border: 1px double white;*/
 		margin: 20px auto;
 	}
 
