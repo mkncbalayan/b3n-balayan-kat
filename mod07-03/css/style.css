@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: grey;
+}
+
+.wrapper {
+	background-color: white;
+	width: 80vw; /* vw = viewport width */
+	height: 100vh;  /*vh = viewport height*/ 
+	margin: 0 auto;
+	text-align: center;
+}
+
+.box {
+	border: 5px solid black;
+	width: 50%;
+	height: calc(100vh/3);
+	float: left;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+hr	{
+	margin: 25px 0;
+}
+
+h1,
+hr,
+p {
+	margin: 25px 0;
+}
+
+h1 {
+	padding: 25px;
+}
+
+p {
+	font-size: 3em;
+	color: white;
+}
+
+input,
+button	{
+	padding: 25px;
+	margin: 25px;
+	font-size: 2em;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+}
