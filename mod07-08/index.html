@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"	content="IE=Edge">
+
+	<title></title>
+
+</head>
+<body>
+
+	<p id="myName"></p>
+	<p id="myName2"></p>
+
+	<script type="text/javascript">
+		
+		// var i;
+		// for (i=0; i<=10; i++) {
+		// 	if (i==5){
+		// 		// break;
+		// 		continue;
+		// 	}
+
+		// 	alert("Number is " + i);
+		// }
+
+
+		// var text = "";
+		// var c;
+		// for (c = 1; c<=100; c++) {
+		// 	if (c == 10)
+		// 		continue;
+		// 	text+="Juan Dela Cruz <br>";
+		// }
+		// document.getElementById("myName").innerHTML = text;
+
+
+		// function printMyName() {
+		// 	var text = "";
+		// 	var	yourName = "Juan Dela Cruz"
+		// 	var counter;
+		// 	for (counter = 1; counter <=20; counter+=1) {
+		// 		text = text + yourName + "<br>";
+		// 	}
+		// 	document.getElementById("myName").innerHTML = text;
+		// }
+
+		// printMyName();
+
+
+		function printMyName(yourName, element) {
+			var text = "";
+			// var	yourName = "Juan Dela Cruz"
+			var counter;
+			for (counter = 1; counter <=5; counter+=1) {
+				text = text + yourName + "<br>";
+			}
+			document.getElementById(element).innerHTML = text;
+		}
+
+		printMyName("John Smith", "myName");
+		printMyName("Jane Doe", "myName2");
+
+	</script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>
