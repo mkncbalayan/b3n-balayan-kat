@@ -28,6 +28,8 @@ include 'partials/head.php';
 	</header>
 
 	<main class="wrapper">
+		<?php //echo $_SESSION['role']; ?>
+
 		<p><?php echo $_SESSION['message']; ?></p>
 		
 		<h1>Home</h1>

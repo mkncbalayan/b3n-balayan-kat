@@ -20,3 +20,12 @@ h1 {
 body {
 	background-color: green;
 }
+
+table,
+th,
+td,
+tr {
+	padding: 15px;
+	border: 1px solid black;
+	
+}

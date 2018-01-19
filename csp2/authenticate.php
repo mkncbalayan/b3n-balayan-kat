@@ -2,19 +2,25 @@
 
 session_start();
 
-$users = [
+// $users = [
 
-	['username' => 'admin', 'password' => 'abc123'],
-	['username' => 'billy', 'password' => 'ABC*()'],
-	['username' => 'user1', 'password' => 'abc123ABC*()']
+// 	['username' => 'admin', 'password' => 'abc123'],
+// 	['username' => 'billy', 'password' => 'ABC*()'],
+// 	['username' => 'user1', 'password' => 'abc123ABC*()']
 
-];
+// ];
+
+// require 'assets/users.php';
+
+$file = file_get_contents('assets/users.json');
+$users = json_decode($file,true);
+
 
 $isLoginSuccessful = false; //monitor login status
 
 
-$username = htmlspecialchars($_POST['username']);
-$password = htmlspecialchars($_POST['password']);
+$userName = htmlspecialchars($_POST['username']);
+$passWord = htmlspecialchars($_POST['password']);
 
 // echo $username;
 // echo $password;
@@ -24,17 +30,18 @@ foreach ($users as $user) {
 	// echo $user['username'].'<br>';
 	// echo $user['password'].'<br>';
 
-	if (($user['username'] == $username) && ($user['password'] == $password)){
+	if (($user['username'] == $userName) && ($user['password'] == $passWord)){
 		// echo $username . ' was found. <br>';
 		// echo 'Password is correct.';
 		$isLoginSuccessful = true;
+		$_SESSION['role'] = $user['role'];
 		break;
 	}
 }
 
 if($isLoginSuccessful) {//if the value of the variable is boolean, 'if' automatically looks for truth
 	// session_start();
-	$_SESSION['current_user'] = $username;
+	$_SESSION['current_user'] = $userName;
 	header('location: home.php');
 } else {
 	header('location: login.php');
