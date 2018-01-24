@@ -20,19 +20,19 @@
     {
         "username": "user3",
         "password": "user3",
-        "email": "user",
+        "email": "user@gmail1.com",
         "role": "user"
     },
     {
         "username": "user4",
         "password": "user4",
-        "email": "user",
+        "email": "user4@gmail1.com",
         "role": "user"
     },
     {
         "username": "user5",
         "password": "user5",
-        "email": "user",
+        "email": "user5@gmail1.com",
         "role": "user"
     },
     {
