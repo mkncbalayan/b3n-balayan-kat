@@ -42,12 +42,6 @@
         "role": "user"
     },
     {
-        "username": "user6",
-        "password": "user6",
-        "email": "user6@google.com",
-        "role": "user"
-    },
-    {
         "username": "user5",
         "password": "user5",
         "email": "user5@user.com",
