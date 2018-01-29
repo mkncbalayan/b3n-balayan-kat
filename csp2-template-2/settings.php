@@ -2,12 +2,11 @@
 
 session_start();
 
-if(!isset($_SESSION['current_user'])) {
+if (!isset($_SESSION['current_user'])) {
 	header('location: login.php');
 } else {
-	if ($_SESSION['role'] != 'admin'){
+	if ($_SESSION['role'] != 'admin')
 		header('location: home.php');
-	}
 }
 
 function getTitle() {
@@ -37,29 +36,25 @@ include 'partials/head.php';
 				<th>Role</th>
 			</thead>
 			<tbody>
-
 				<?php
 
 				$file = file_get_contents('assets/users.json');
-				$users = json_decode($file,true);
+				$users = json_decode($file, true);
 
 				foreach ($users as $key => $user) {
 					echo '
-						<tr>
-							<td><a href="user.php?id='. $key .'">'.$user['username'].'</a></td>
-							<td>'.$user['password'].'</td>
-							<td>'.$user['email'].'</td>
-							<td>'.$user['role'].'</td>
-						</tr>
+					<tr>
+						<td><a href="user.php?id='.$key.'">' . $user['username'] . '</a></td>
+						<td>' . $user['password'] . '</td>
+						<td>' . $user['email'] . '</td>
+						<td>' . $user['role'] . '</td>
+					</tr>
 					';
 				}
-
-
 
 				?>
 			</tbody>
 		</table>
-
 		
 	</main>
 

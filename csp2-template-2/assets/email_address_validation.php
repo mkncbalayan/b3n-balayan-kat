@@ -1,26 +1,29 @@
 <?php
 
+// $username = $_POST['username'];
+
+// processing
 $file = file_get_contents('users.json');
-$emails = json_decode($file, true);
+$users = json_decode($file, true);
+$emails = [];
+foreach ($users as $user) {
+	array_push($emails, $user['email']);
+}
 
-$email_address = [];
+if (isset($_POST['email'])) {
+	$email_entered = $_POST['email'];
 
-foreach ($emails as $email) {
-	array_push($email_address, $email['email']);
-};
-
-if (isset($_POST['email_address'])) {
-	$email_address_entered = $_POST['email_address'];
-
-	if (!empty($email_address_entered)) {
-		if (in_array($email_address_entered, $email_address)) {
+	 if (!empty($email_entered)) {
+		if (in_array($email_entered, $emails)) {
 			echo 'Email <span class="red-message">not valid</span>';
 		} else {
 			echo 'Email <span class="green-message">valid</span>';
 		}
-	} else {
-		echo 'Email';
-	}
+	 } else {
+	 	echo 'Email';
+	 }
+
 }
 
+// echo $username;
 // var_dump($usernames);

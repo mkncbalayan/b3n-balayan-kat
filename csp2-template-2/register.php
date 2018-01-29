@@ -26,7 +26,7 @@ include 'partials/head.php';
 			<label for="password">Password</label>
 			<input type="password" name="password" id="password" placeholder="Enter new password" class="form-control" required>
 
-			<label for="confirmPassword">Confirm Password <!-- <span id="confirmation"></span> --></label>
+			<label for="confirmPassword">Confirm Password</label>
 			<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again" class="form-control" required>
 
 			<label for="email">Email Address</label>
@@ -47,60 +47,49 @@ include 'partials/foot.php';
 ?>
 
 	<script type="text/javascript">
-		// $('#username').keyup(function () {
+		// $('#username').keyup(function() {
 		$('#username').on('input', function() {
 			var usernameText = $(this).val();
 			// console.log(usernameText);
-			$.post('assets/username_validation.php', //script that will process
-				{username: usernameText}, //data is an object in json format (key: value) doesnt need to match json key
-				function (data, status) {
+
+			$.post('assets/username_validation.php',
+				{ username: usernameText },
+				function(data, status) {
+					// console.log('Processed: ' + data);
 					$('[for="username"]').html(data);
-				}); 
+				});
 		});
 
-		// if ($('#password') !== " ") {
-			// $('#confirmPassword').on('input', function () {
-			// 	if ($('#confirmPassword').val() != $('#password').val()) {
-			// 		$('#confirmation').html('does not match');
-			// 		$('#confirmation').attr('class','red-message');
-			// 	} else {
-			// 		$('#confirmation').html('match');
-			// 		$('#confirmation').attr('class','green-message');
-			// 	}
-		// 	});
-		// } else {
-		// 	$('#confirmation').html("");
-		// }
+		$('#confirmPassword').on('input', function() {
+			// console.log($('#password').val());
+			// console.log($('#confirmPassword').val());
 
-		
-
-		$('#confirmPassword').on('input', function () {
 			var passwordText = $('#password').val();
-			var confirmPassword = $('#confirmPassword').val();
-
-			if (passwordText != ' ' && confirmPassword != ' ') {
-				if (passwordText == confirmPassword) {
-					$('[for="password"]').html('Password <span class="green-message">match</span>');
+			var confirmPasswordText = $('#confirmPassword').val();
+			if (passwordText != '' || confirmPasswordText != '') {
+				if (passwordText == confirmPasswordText) {
+					// console.log('matched');
+					$('[for="password"]').html('Password <span class="green-message">matched</span>');
 				} else {
-					$('[for="password"]').html('Password <span class="red-message">mismatch</span>');
+					// console.log('mismatched');
+					$('[for="password"]').html('Password <span class="red-message">mismatched</span>');
 				}
 			} else {
-				$('[for="password"]').html('Password');
-
+				$('[for="password"]').html('Password');	
 			}
 		});
-			
 
 		$('#email').on('input', function() {
 			var emailText = $(this).val();
 			// console.log(usernameText);
-			$.post('assets/email_address_validation.php', //script that will process
-				{email_address: emailText}, //data is an object in json format (key: value) doesnt need to match json key
-				function (data, status) {
+
+			$.post('assets/email_address_validation.php',
+				{ email: emailText },
+				function(data, status) {
+					// console.log('Processed: ' + data);
 					$('[for="email"]').html(data);
-				}); 
+				});
 		});
-		
 	</script>
 
 </body>
