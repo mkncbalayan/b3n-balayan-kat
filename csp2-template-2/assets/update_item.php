@@ -16,7 +16,7 @@ $items[$item_id]['description'] = $description;
 if ($image == NULL) {
 	$items[$item_id]['image'] = $items[$item_id]['image'];
 } else
-	$items[$item_id]['image'] = 'assets/img/'.$image;
+	$items[$item_id]['image'] = '../assets/img/'.$image;
 
 $items[$item_id]['price'] = $price;
 $items[$item_id]['category'] = $category;

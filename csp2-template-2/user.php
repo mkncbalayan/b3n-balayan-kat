@@ -50,6 +50,11 @@ include 'partials/head.php';
 				<td>Role</td>
 				<td><?php echo $users[$id]['role']; ?></td>
 			</tr>
+			<tr>
+				<td>Profile Picture</td>
+				<td><?php echo '<img src="'.$users[$id]['image'].'" alt="'.$users[$id]['username'].'-profilepic">'; ?></td>
+			</tr>
+
 		</table>
 
 		<a href="settings.php">

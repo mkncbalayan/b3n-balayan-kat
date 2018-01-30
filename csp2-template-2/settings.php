@@ -34,6 +34,7 @@ include 'partials/head.php';
 				<th>Password</th>
 				<th>Email</th>
 				<th>Role</th>
+				<th>Profile Picture</th>
 			</thead>
 			<tbody>
 				<?php
@@ -48,6 +49,8 @@ include 'partials/head.php';
 						<td>' . $user['password'] . '</td>
 						<td>' . $user['email'] . '</td>
 						<td>' . $user['role'] . '</td>
+						<td><img src="'.$user['image'].'" alt=""></td>
+
 					</tr>
 					';
 				}

@@ -32,6 +32,21 @@ echo '
 			else
 				echo '<option>'.$role.'</option>';
 		}
+
+
+
 	echo'
 	</select>
+
+	<labe>Profile Picture</label>';
+
+	if ($users[$id]['image'] !== ""){
+		echo '<img src="assets/img/'.$user['image'].'" alt="'.$user['username'].'-profilepic">';
+	} else 
+		echo ' (No profile picture yet!)';
+
+
+	// <img src="'.$users[$id]['image'].'">
+	echo '<input name="image" class="form-control" type="file">
+
 </div>';
