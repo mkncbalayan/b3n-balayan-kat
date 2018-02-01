@@ -88,3 +88,7 @@ td {
 td > img {
 	width: 40%;
 }
+
+td > input {
+	width: 50px;
+}

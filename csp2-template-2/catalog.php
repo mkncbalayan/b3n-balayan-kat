@@ -86,7 +86,7 @@ if (isset($_GET['search']) && $_GET['category'] !== 'All') {
 			foreach ($result as $key => $item) {
 				echo '
 					<div class="item-parent-container form-group">
-						<a href="item.php?id='.$item['id'].'&result=<?php var_dump($result); ?>">'; //*************
+						<a href="item.php?id='.$item['id'].'">'; //*************
 
 				echo '<div class="item-container">
 							<h3>'.$item['name'].'</h3>
