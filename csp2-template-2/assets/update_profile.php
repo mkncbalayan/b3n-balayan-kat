@@ -24,10 +24,10 @@ foreach($users as $key => $user){
 	};
 };
 
-if ($_POST['image'] === NULL) {
-	$image = $users[$user_id]['image'];
-} else {
+if ($_POST['image'] !== "") {
 	$image = 'assets/img/'.$_POST['image'];
+} else {
+	$image = $users[$user_id]['image'];
 }
 
 $users[$user_id]['username'] = $username;

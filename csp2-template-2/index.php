@@ -12,6 +12,13 @@ function getTitle() {
 
 include 'partials/head.php';
 
+//create session variable
+$_SESSION['cart'] = array();
+
+// create session variable for item counter
+$_SESSION['item_count'] = 0;
+
+
 ?>
 
 </head>

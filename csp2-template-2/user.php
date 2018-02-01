@@ -52,7 +52,19 @@ include 'partials/head.php';
 			</tr>
 			<tr>
 				<td>Profile Picture</td>
-				<td><?php echo '<img src="'.$users[$id]['image'].'" alt="'.$users[$id]['username'].'-profilepic">'; ?></td>
+				<td>
+
+					<?php 
+
+					if ($users[$id]['image'] !== ""){
+						echo '<img src="'.$users[$id]['image'].'" alt="'.$users[$id]['username'].'-profilepic">';
+					} else 
+						echo 'No profile picture yet!';
+
+					 ?>
+						
+
+				</td>
 			</tr>
 
 		</table>

@@ -41,7 +41,7 @@ echo '
 	<labe>Profile Picture</label>';
 
 	if ($users[$id]['image'] !== ""){
-		echo '<img src="assets/img/'.$user['image'].'" alt="'.$user['username'].'-profilepic">';
+		echo '<img src="'.$users[$id]['image'].'" alt="'.$users[$id]['username'].'-profilepic">';
 	} else 
 		echo ' (No profile picture yet!)';
 

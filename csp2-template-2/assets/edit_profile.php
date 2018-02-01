@@ -37,7 +37,7 @@ foreach($users as $key => $user){
 			<labe>Profile Picture</label>';
 
 			if ($user['image'] !== ""){
-				echo '<img src="assets/img/'.$user['image'].'" alt="'.$user['username'].'-profilepic">';
+				echo '<img src="'.$user['image'].'" alt="'.$user['username'].'-profilepic">';
 			} else 
 				echo 'No profile picture yet!';
 

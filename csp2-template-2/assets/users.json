@@ -1,10 +1,10 @@
 [
     {
         "username": "admin",
-        "password": "admin2",
+        "password": "admin",
         "email": "admin@gmail.co",
         "role": "admin",
-        "image": ""
+        "image": "assets\/img\/brunei-header.jpg"
     },
     {
         "username": "billy",

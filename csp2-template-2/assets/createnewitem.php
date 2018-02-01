@@ -10,6 +10,7 @@ $description = $_POST['description'];
 $category = $_POST['category'];
 
 $new_item = array(
+	"id" => (int)$id,
 	"name" => $product_name,
 	"image" => 'assets/images/' . $image,
 	"price" => $price,

@@ -14,10 +14,10 @@ $users[$user_id]['username'] = $username;
 $users[$user_id]['password'] = $password;
 $users[$user_id]['email'] = $email;
 
-if ($_POST['image'] === NULL) {
-	$image = $users[$user_id]['image'];
-} else {
+if ($_POST['image'] !== "") {
 	$image = 'assets/img/'.$_POST['image'];
+} else {
+	$image = $users[$user_id]['image'];
 }
 
 $users[$user_id]['role'] = $user_role;
