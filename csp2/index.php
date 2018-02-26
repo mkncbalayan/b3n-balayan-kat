@@ -1,45 +1,48 @@
 <?php
 
+session_start();
+
+if (isset($_SESSION['current_user'])) {
+	header('location: home.php');
+}
+
 function getTitle() {
-	echo 'Index | Welcome to Beer Web App';
+	echo 'Welcome!';
 }
 
 include 'partials/head.php';
 
-?>
+// create session variable for cart
+$_SESSION['cart'] = array();
 
+// create session variable for item counter
+$_SESSION['item_count'] = 0;
+
+?>
 
 </head>
 <body>
-	<header>
 
-		<?php
+	<!-- main header -->
+	<?php include 'partials/main_header.php'; ?>
 
-		include 'partials/main_navigation.php';
-
-		?>
-
-	</header>
-
+	<!-- wrapper -->
 	<main class="wrapper">
+
+		<img class="home-banner" src="assets/images/banner.png" alt="cithra banner">
+
+		<h1>Welcome to Cithra!</h1>
 		
-		<h1>Index</h1>
+	</main>
 
-	</main> <!-- END wrapper -->
-
-	<footer>
-		
-		<?php
-
-		include 'partials/footer.php';
-
-		?>
-
-	</footer>
-
+	<!-- main footer -->
+	<?php include 'partials/main_footer.php'; ?>
 
 <?php
 
 include 'partials/foot.php';
 
 ?>
+
+</body>
+</html>
